@@ -9,6 +9,6 @@ opt = parser.parse_args()
 
 text = textract.process(opt.inputFile)
 
-with open(opt.outputFolder + 'results.txt', 'w') as ofile:
+with open(opt.outputFolder + 'result.txt', 'w') as ofile:
     ofile.writelines(text)
 
