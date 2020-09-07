@@ -14,7 +14,7 @@
 	"input": [
 		{
 			"file": {
-				"name": "inputFile",
+				"name": "InputFile",
 				"description": "The input document file",
 				"options": {
 					"required": true,
@@ -68,8 +68,8 @@
 	],
 	"method": {
 		"imageType": "docker",
-		"imageName": "jumpst3r/doctranslate",
-		"testData": "https://www.dropbox.com/s/mjql474hm9vechp/tmp45654378.zip?dl=1",
+		"imageName": "jumpst3r/textextract",
+		"testData": "https://www.dropbox.com/s/hij6qtrsioxe2xt/testdata3429.zip?dl=1",
 		"executableType": "bash",
 		"executable_path": "/input/script.sh"
 	}
