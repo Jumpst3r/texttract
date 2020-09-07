@@ -1,0 +1,77 @@
+{
+	"general": {
+		"name": "textract",
+		"description": "Extract text from multiple formats (pdf, csv, odt, etc)",
+		"developer": "Nicolas Dutly",
+		"affiliation": "University Of Fribourg",
+		"email": "ndutly@student.ethz.ch",
+		"author": "Nicolas Dutly",
+		"DOI": "",
+		"type": "text-processing",
+		"license": "MIT",
+		"ownsCopyright": "0"
+	},
+	"input": [
+		{
+			"file": {
+				"name": "inputFile",
+				"description": "The input document file",
+				"options": {
+					"required": true,
+					"mimeTypes": {
+						"allowed": [
+							"application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+							"application/msword",
+							"application/vnd.oasis.opendocument.text",
+							"text/csv",
+							"message/rfc822",
+							"application/epub+zip",
+							"image/gif",
+							"image/jpg",
+							"image/jpeg",
+							"application/json",
+							"text/html",
+							"audio/mpeg",
+							"audio/ogg",
+							"application/vnd.openxmlformats-officedocument.presentationml.presentation",
+							"application/pdf",
+							"audio/wav",
+							"application/vnd.ms-excel"
+						],
+						"default": "application/pdf"
+					}
+				}
+			}
+		},
+		},
+		{
+			"outputFolder": {}
+		}
+	],
+	"output": [
+		{
+			"file": {
+				"name": "result",
+				"type": "text",
+				"description": "resulting extracted text",
+				"options": {
+					"filename": "result.txt",
+					"mimeTypes": {
+						"allowed": [
+							"text/plain"
+						],
+						"default": "text/plain"
+					},
+					"visualization": false
+				}
+			}
+		}
+	],
+	"method": {
+		"imageType": "docker",
+		"imageName": "jumpst3r/doctranslate",
+		"testData": "https://www.dropbox.com/s/mjql474hm9vechp/tmp45654378.zip?dl=1",
+		"executableType": "bash",
+		"executable_path": "/input/script.sh"
+	}
+}
