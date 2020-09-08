@@ -1,7 +1,7 @@
 {
 	"general": {
 		"name": "textract",
-		"description": "Extract text from multiple formats (pdf, csv, odt, etc)",
+		"description": "Extract text from multiple formats (pdf, csv, odt, etc) using the popular textract package",
 		"developer": "Nicolas Dutly",
 		"affiliation": "University Of Fribourg",
 		"email": "ndutly@student.ethz.ch",
@@ -28,6 +28,7 @@
 							"application/epub+zip",
 							"image/gif",
 							"image/jpg",
+							"image/png",
 							"image/jpeg",
 							"application/json",
 							"text/html",
