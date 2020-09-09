@@ -8,6 +8,6 @@ sleep 5
 # Upload test data
 printf "uploading test data... \n"
 curl -X POST -H "Content-Type: application/json" -d @upload.json http://${serverAddr}:8080/collections
-sleep 3
+sleep 5
 printf "running algorithm... \n"
 curl -X POST -H "Content-Type: application/json" -d @run.json http://${serverAddr}:8080/text-processing/textract/1
